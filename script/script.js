@@ -35,12 +35,14 @@ const inputWord = prompt("Inserisci una parola da controllare").toLowerCase();
 // let check = checkPalindrome(inputWord);
 
 // Crare funzione
+console.log("La parola che hai inserito è:", inputWord);
+
 
 function checkPalindrome ( word ){
 
     let reverseWord = "";
 
-    for (let i=word.length - 1; i >= 0; i--) {
+    for (let i=word.length -1; i >= 0; i--) {
 
         let letter = word[i];
 
@@ -62,9 +64,9 @@ function checkPalindrome ( word ){
     return reverseWord
 }
 
+const resultCheck = checkPalindrome(inputWord);
 
-
-console.log(checkPalindrome(inputWord));
+console.log("La parola invertita è:", resultCheck);
 // Controllo della parola
 
 
